@@ -1,4 +1,14 @@
 using System;
 
-// README.md를 읽고 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+Vehicle[] vehicles = new Vehicle[]
+{
+    new Car("스포츠카"),
+    new AirPlane("보잉747"),
+    new Boat("요트")
+};
+
+Console.WriteLine("=== 경주 시작! ===");
+foreach (var vehicle in vehicles)
+{
+    vehicle.Move();
+}
